@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from flask_jwt_extended import JWTManager, create_access_token, jwt_required
+from flask_jwt_extended import JWTManager, create_access_token
 import firebase_admin
 from firebase_admin import credentials, firestore
 from google.cloud.firestore_v1.document import DocumentReference
@@ -15,7 +15,7 @@ CORS(app)
 app.config['JWT_SECRET_KEY'] = JWT_SECRET_KEY
 jwt_code = JWTManager(app)
 
-cred = credentials.Certificate('/home/testforgdsc/mysite/server.json')
+cred = credentials.Certificate('/home/gdscmemberweb/mysite/server.json')
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
@@ -84,7 +84,7 @@ def create_document(user_data):
             return jsonify({"message": "權限不足"}), 400
 
     data = request.json['data']
-    
+
     if collection_name == "users":
         data['email'] = user_data["sub"]["email"]
         data['picture'] = user_data["sub"]["picture"]
@@ -110,7 +110,7 @@ def assign_member_to_project(user_data):
 
     user_email = request.json['user_email']
     project_name = request.json['project_name']
-    
+
     user_ref = db.collection('users').where('email', '==', user_email).limit(1).stream()
     project_ref = db.collection('projects').where('name', '==', project_name).limit(1).stream()
 
@@ -137,7 +137,7 @@ def assign_project_manager(user_data):
 
     user_email = request.json['user_email']
     project_name = request.json['project_name']
-    
+
     user_ref = db.collection('users').where('email', '==', user_email).limit(1).stream()
     project_ref = db.collection('projects').where('name', '==', project_name).limit(1).stream()
 
