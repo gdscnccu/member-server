@@ -34,7 +34,7 @@ def serialize_doc(doc):
 def decode_id_token(id_token):
     jwks_client = PyJWKClient("https://www.googleapis.com/oauth2/v3/certs")
     signing_key = jwks_client.get_signing_key_from_jwt(id_token)
-    decoded_token = jwt.decode(id_token, signing_key.key, algorithms=["RS256"], audience='691751608975-c102etsspqsaifgrlr634keuddh5hl2e.apps.googleusercontent.com')
+    decoded_token = jwt.decode(id_token, signing_key.key, algorithms=["RS256"], audience='162429496765-ortobcqq28giqurc67ls7adv5ekft7mv.apps.googleusercontent.com')
     return decoded_token
 
 def jwt_required_custom(fn):
