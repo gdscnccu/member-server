@@ -1,0 +1,688 @@
+{
+	"info": {
+		"_postman_id": "baaa24b2-9321-4f60-9643-4c292a88950d",
+		"name": "MemberWeb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31400166"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"item": [
+				{
+					"name": "Create_Note",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"collection\": \"notes\",\r\n      \"data\": {\r\n        \"name\": \"Note 1210\",\r\n        \"date\": \"2023/11/26\",\r\n        \"link\": \"http://gdsc.com/note1126\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/create",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create_Form",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"collection\": \"forms\",\r\n      \"data\": {\r\n        \"expired_at\": \"Sun, 05 Dec 2023 19:06:46 GMT\",\r\n        \"link\": \"http://example.com/form\",\r\n        \"name\": \"Form 1204\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/create",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create_Project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"collection\": \"projects\",\r\n    \"data\": {\r\n        \"name\": \"Project_1210\",\r\n        \"description\": \"This is a new project.\",\r\n        \"slides\": \"http://example.com/projectslides1210\",\r\n        \"team_members\": [],\r\n        \"project_manager\": null\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/create",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create_Member",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"collection\": \"users\",\r\n    \"data\": {\r\n        \"name\": \"GDSC NCCU\",\r\n        \"student_id\": \"123456789\",\r\n        \"role\": \"Core\",\r\n        \"payment\": 200,\r\n        \"paid\": true,\r\n        \"major_n_grade\": \"資科四\",\r\n        \"projects_involved\": [],\r\n        \"managed_projects\": []\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/create",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assign_Member_to_Project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_email\": \"gdscnccu@gmail.com\",\r\n    \"project_name\": \"Project_1210\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/assign_member_to_project",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"assign_member_to_project"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assign_PM",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_email\": \"gdscnccu@gmail.com\",\r\n    \"project_name\": \"Project_1210\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/assign_pm",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"assign_pm"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Read",
+			"item": [
+				{
+					"name": "ReadNotes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/read?collection=notes",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"read"
+							],
+							"query": [
+								{
+									"key": "collection",
+									"value": "notes"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadForms",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/read?collection=forms",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"read"
+							],
+							"query": [
+								{
+									"key": "collection",
+									"value": "forms"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadProjects",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/read?collection=projects",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"read"
+							],
+							"query": [
+								{
+									"key": "collection",
+									"value": "projects"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadProject",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/read_project/Project_1210",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"read_project",
+								"Project_1210"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadMembers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/read?collection=users",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"read"
+							],
+							"query": [
+								{
+									"key": "collection",
+									"value": "users"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadMember",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/read_member/gdscnccu@gmail.com",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"read_member",
+								"gdscnccu@gmail.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Update",
+			"item": [
+				{
+					"name": "Update_Note",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Tech Note\",\r\n    \"date\": \"12/09\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/update_note/Note 1210",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"update_note",
+								"Note 1210"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update_Form",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Form 1204\",\r\n    \"link\": \"https://google.coms\",\r\n    \"expired_at\": \"Sun, 05 Dec 2023 19:06:46 GMTT\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/update_form/Form 1204",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"update_form",
+								"Form 1204"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update_Project",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Project_1210\",\r\n    \"description\": \"Updated project description.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/update_project/Project_1210",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"update_project",
+								"Project_1210"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update_Member",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ABC\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/update_member/gdscnccu@gmail.com",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"update_member",
+								"gdscnccu@gmail.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"item": [
+				{
+					"name": "Delete_Note",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/delete_note/Tech Note",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"delete_note",
+								"Tech Note"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete_Form",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/delete_form/Form 1204",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"delete_form",
+								"Form 1204"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete_Project",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/delete_project/Project_1210",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"delete_project",
+								"Project_1210"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete_Member",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjM2NDk5OCwianRpIjoiNzk1NDQ5MmUtYTljZS00M2RhLWIwZTUtY2UyMDRhMDQyZmZkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJlbWFpbCI6Imdkc2NuY2N1QGdtYWlsLmNvbSIsIm5hbWUiOiJHb29nbGUgRGV2ZWxvcGVyIFN0dWRlbnQgQ2x1YnMgTkNDVSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLSEJ0LVhEN2xnTDJ2LURuV3c4NElkekdsOEFkdnZ3aWIxdzlpT1REWnZoQT1zOTYtYyJ9LCJuYmYiOjE3MDIzNjQ5OTgsImV4cCI6MTcwMjM2NTg5OH0.MQY5Lm1vgLtwyraCNqA44flb6SMt3cd12EZL2GgDKpM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://gdscmemberweb.pythonanywhere.com/delete_member/gdscnccu@gmail.com",
+							"protocol": "https",
+							"host": [
+								"gdscmemberweb",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"delete_member",
+								"gdscnccu@gmail.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
