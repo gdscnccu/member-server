@@ -15,7 +15,7 @@ CORS(app)
 app.config['JWT_SECRET_KEY'] = JWT_SECRET_KEY
 jwt_code = JWTManager(app)
 
-cred = credentials.Certificate('/home/testforgdsc/mysite/server.json')
+cred = credentials.Certificate('/home/gdscmemberweb/member-server/Service/server.json')
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
