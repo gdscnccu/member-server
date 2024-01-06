@@ -9,11 +9,13 @@ import jwt
 from functools import wraps
 import git
 import requests
+from datetime import timedelta
 
 app = Flask(__name__)
 CORS(app)
 
 app.config['JWT_SECRET_KEY'] = JWT_SECRET_KEY
+app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(hours=24)
 jwt_code = JWTManager(app)
 
 cred = credentials.Certificate('/home/gdscmemberweb/member-server/Service/server.json')
