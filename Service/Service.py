@@ -6,7 +6,6 @@ from google.cloud.firestore_v1.document import DocumentReference
 from flask_cors import CORS
 from config import JWT_SECRET_KEY
 import jwt
-from jwt import PyJWKClient
 from functools import wraps
 import git
 import requests
