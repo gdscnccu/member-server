@@ -39,10 +39,10 @@ def check_role(user_data):
     user_docs = db.collection('users').where('email', '==', user_email).limit(1).get()
 
     if len(user_docs) == 0:
-        return "None"
+        return "none"
 
     user_doc = user_docs[0]
-    user_role = user_doc.to_dict().get('role', 'user')
+    user_role = user_doc.to_dict().get('role', 'none')
 
     return user_role
 
